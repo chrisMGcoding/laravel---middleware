@@ -23,4 +23,4 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/article', [ArticleController::class, 'index'])->middleware('isConnected')->name('article');
+Route::get('/article', [ArticleController::class, 'index'])->name('article');
